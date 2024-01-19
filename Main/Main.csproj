@@ -1,11 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<RootNamespace>Konamiman.Z80dotNet</RootNamespace>
-		<AssemblyName>Konamiman.Z80dotNet</AssemblyName>
-	</PropertyGroup>
-
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Konamiman.Z80dotNet</RootNamespace>
+    <AssemblyName>Konamiman.Z80dotNet</AssemblyName>
+  </PropertyGroup>
 </Project>
