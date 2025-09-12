@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <IsPackable>true</IsPackable>
     
     <!-- Assembly configuration -->
     <RootNamespace>Konamiman.Z80dotNet</RootNamespace>
@@ -30,3 +31,4 @@
   </ItemGroup>
 
 </Project>
+
