@@ -6,16 +6,16 @@ variables:
 steps:
 - checkout: self
 
-- pwsh: dotnet tool install --global DotnetPackaging.DeployerTool
-  displayName: Install DotnetPackaging.DeployerTool
+- pwsh: dotnet tool install --global DotnetDeployer
+  displayName: Install DotnetDeployer
 
-- pwsh: dotnetdeployer nuget --api-key $env:NUGET_API_KEY
+- pwsh: dotnetdeployer nuget --api-key $env:NUGET_API_KEY --name-pattern "*"
   displayName: Publish NuGet packages
   condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
   env:
     NUGET_API_KEY: $(NuGetApiKey)
 
-- pwsh: dotnetdeployer nuget --api-key $env:NUGET_API_KEY --no-push
+- pwsh: dotnetdeployer nuget --api-key $env:NUGET_API_KEY --no-push --name-pattern "*"
   displayName: Publish NuGet packages (dry run)
   condition: ne(variables['Build.SourceBranch'], 'refs/heads/master')
   env:
