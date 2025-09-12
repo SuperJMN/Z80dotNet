@@ -1,10 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    
+    <!-- Assembly configuration -->
     <RootNamespace>Konamiman.Z80dotNet</RootNamespace>
     <AssemblyName>Konamiman.Z80dotNet</AssemblyName>
+    
+    <!-- Package metadata -->
     <PackageId>Zafiro.Compilers.Z80DotNet</PackageId>
+    <Title>Z80.NET - Z80 Processor Simulator</Title>
+    <Description>Z80.NET is a Z80 processor simulator for .NET that can be used as the core component for developing computer emulators or exercising Z80 code. Supports all documented and undocumented instructions and behaviors. (Zafiro fork)</Description>
+    <Authors>Konamiman</Authors>
+    <Copyright>Copyright (c) Konamiman</Copyright>
+    <PackageProjectUrl>https://github.com/Konamiman/Z80dotNet</PackageProjectUrl>
+    <PackageTags>z80;processor;simulator;emulator;cpu;zilog;retro;8bit;msx;spectrum</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/Konamiman/Z80dotNet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE.txt" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
 </Project>
