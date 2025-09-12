@@ -1,14 +1,14 @@
 variables:
-- group: api-keys
-- name: Agent.Source.Git.ShallowFetchDepth
-  value: 0
+  - group: api-keys
+  - name: Agent.Source.Git.ShallowFetchDepth
+    value: 0
 
 steps:
   - checkout: self
     fetchDepth: 0
 
-- pwsh: dotnet tool install --global DotnetDeployer.Tool
-  displayName: Install DotnetDeployer
+  - pwsh: dotnet tool install --global DotnetDeployer.Tool
+    displayName: Install DotnetDeployer
 
 - pwsh: dotnetdeployer nuget --api-key $env:NUGET_API_KEY --name-pattern "*"
   displayName: Publish NuGet packages
