@@ -4,7 +4,8 @@ variables:
   value: 0
 
 steps:
-- checkout: self
+  - checkout: self
+    fetchDepth: 0
 
 - pwsh: dotnet tool install --global DotnetDeployer.Tool
   displayName: Install DotnetDeployer
