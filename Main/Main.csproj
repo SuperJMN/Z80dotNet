@@ -5,5 +5,6 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Konamiman.Z80dotNet</RootNamespace>
     <AssemblyName>Konamiman.Z80dotNet</AssemblyName>
+    <PackageId>Zafiro.Compilers.Z80DotNet</PackageId>
   </PropertyGroup>
 </Project>
